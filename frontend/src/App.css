@@ -1,0 +1,72 @@
+/* ============================================
+   GLOBAL APP LAYOUT
+   ============================================ */
+
+   html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent full-page scrolling */
+    background: #f7f7f7;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Entire app container */
+  .app-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* ============================================
+     FIXED SIDEBAR
+     ============================================ */
+  
+  .sidebar-container {
+    width: 230px;
+    height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #e6e6e6;
+    position: fixed;
+    left: 0;
+    top: 0;
+  
+    /* Shadow + modern feel */
+    box-shadow: 2px 0 8px rgba(0,0,0,0.06);
+  
+    overflow: hidden; /* prevent sidebar scrolling */
+    z-index: 100;
+  }
+  
+  /* ============================================
+     MAIN CONTENT AREA
+     ============================================ */
+  
+  .main-content {
+    margin-left: 230px; /* same as sidebar width */
+    height: 100vh;
+    width: calc(100% - 230px);
+  
+    display: flex;
+    flex-direction: column;
+  
+    overflow-y: auto; /* ONLY content scrolls */
+    overflow-x: hidden;
+  
+    background: #fafafa;
+    padding: 0;
+  }
+  
+  /* Smooth scrolling */
+  .main-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  .main-content::-webkit-scrollbar-thumb {
+    background: #d1d1d1;
+    border-radius: 6px;
+  }
+  .main-content::-webkit-scrollbar-thumb:hover {
+    background: #b5b5b5;
+  }
+  

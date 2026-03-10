@@ -1,0 +1,344 @@
+/* ===============================
+   PAGE WRAPPER
+   =============================== */
+.profile-container {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+     PROFILE CARD
+     =============================== */
+.profile-card {
+    width: 100%;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+}
+
+/* ===============================
+     PROFILE IMAGE SECTION
+     =============================== */
+.profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.profile-image img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #eef2ff;
+    /* soft indigo */
+    background: #f9fafb;
+}
+
+/* File input */
+.profile-image input[type="file"] {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Update button */
+.profile-image button {
+    padding: 7px 16px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+    border: 1px solid #c7d2fe;
+    background: #f5f7ff;
+    color: #4f46e5;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.profile-image button:hover {
+    background: #eef2ff;
+    border-color: #a5b4fc;
+}
+
+/* ===============================
+     PROFILE DETAILS
+     =============================== */
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Name */
+.profile-details h4 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+/* Info rows */
+.profile-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* Labels */
+.profile-details p strong {
+    color: #111827;
+    font-weight: 600;
+    min-width: 110px;
+    display: inline-block;
+}
+
+/* ===============================
+     ROLE / BADGE STYLE (optional future)
+     =============================== */
+.profile-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background: #eef2ff;
+    color: #4f46e5;
+    margin-left: 8px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 12px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e5e7eb;
+}
+
+/* Overlay edit button */
+.image-overlay {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    background: rgba(79, 70, 229, 0.9);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.image-overlay:hover {
+    background: rgba(79, 70, 229, 1);
+}
+
+/* Save button */
+.upload-btn {
+    margin-top: 8px;
+    background: #eef2ff;
+    border: 1px solid #c7d2fe;
+    color: #4f46e5;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.upload-btn:hover {
+    background: #e0e7ff;
+}
+
+.edit-profile-btn {
+    margin-top: 12px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid #c7d2fe;
+    background: #eef2ff;
+    color: #4338ca;
+    cursor: pointer;
+}
+
+.edit-profile-form {
+    margin-top: 16px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.save-btn {
+    background: #e0e7ff;
+    border: 1px solid #a5b4fc;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+.cancel-btn {
+    background: transparent;
+    border: 1px solid #d1d5db;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+
+.salary-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.salary-breakdown-btn {
+    background: transparent;
+    border: 1px solid #c7d2fe;
+    color: #4f46e5;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.salary-breakdown-btn:hover {
+    background: #eef2ff;
+}
+
+/* ===== Overlay ===== */
+.salary-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+/* ===== Floating Card ===== */
+.salary-card {
+    background: #fff;
+    width: 320px;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    animation: popIn 0.2s ease;
+}
+
+.salary-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salary-card-header h6 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #6b7280;
+}
+
+/* ===== List ===== */
+.salary-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 14px;
+}
+
+.salary-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 0.9rem;
+}
+
+.salary-list .net {
+    font-weight: 600;
+    color: #111827;
+}
+
+.form-error-text {
+    color: #d32f2f;
+    font-size: 0.85rem;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.form-success-text {
+    color: #2e7d32;
+    font-size: 0.85rem;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+
+
+
+/* ===============================
+     RESPONSIVE
+     =============================== */
+@media (max-width: 768px) {
+    .profile-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-details p strong {
+        display: block;
+        margin-bottom: 2px;
+    }
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+

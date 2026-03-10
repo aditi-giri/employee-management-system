@@ -1,0 +1,175 @@
+/* ============================================================
+   NOTIFICATIONS PAGE — CLEAN & MODERN UI
+   ============================================================ */
+
+/* Page container */
+.notifications-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notifications-header h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0C120C;
+}
+
+/* Back button */
+.action-btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.blue-btn {
+  background-color: #ECEBF3;
+  color: #0C120C;
+}
+
+.blue-btn:hover {
+  background-color: #C7D6D5;
+}
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+
+.placeholder-box {
+  background: #f9f9fb;
+  border: 1px dashed #c7d6d5;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 15px;
+  color: #6D7275;
+  margin-top: 30px;
+}
+
+/* ============================================================
+   LIST
+   ============================================================ */
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ============================================================
+   CARD
+   ============================================================ */
+
+.notification-card {
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Unread */
+.notification-card.unread {
+  background: #fff4ef;
+  border-left: 4px solid #F15E2E;
+}
+
+/* Read */
+.notification-card.read {
+  background: #ffffff;
+  border-left: 4px solid #C7D6D5;
+  opacity: 0.9;
+}
+
+/* Hover */
+.notification-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+   CONTENT
+   ============================================================ */
+
+.notification-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.notification-message {
+  margin: 0;
+  font-size: 14.5px;
+  color: #0C120C;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   ACTIONS
+   ============================================================ */
+
+.dismiss-btn {
+  background: none;
+  border: none;
+  color: #F15E2E;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.dismiss-btn:hover {
+  background-color: rgba(241, 94, 46, 0.1);
+}
+
+/* ============================================================
+   ANIMATION
+   ============================================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 576px) {
+  .notification-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dismiss-btn {
+    align-self: flex-end;
+  }
+}

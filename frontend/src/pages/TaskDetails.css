@@ -1,0 +1,80 @@
+.task-details-container {
+    padding: 25px;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .back-btn {
+    background: transparent;
+    border: none;
+    color: #F15E2E;
+    font-weight: 600;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .back-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .task-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+  }
+  
+  .task-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .task-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+  }
+  
+  .desc-box {
+    margin-top: 15px;
+  }
+  
+  .status-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .status-pending {
+    background: #f0ad4e;
+  }
+  
+  .status-progress {
+    background: #17a2b8;
+  }
+  
+  .status-completed {
+    background: #28a745;
+  }
+  
+  .status-overdue {
+    background: #dc3545;
+  }
+  
+  .update-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+  }
+  
+  .update-card h5 {
+    font-weight: 600;
+  }
+  

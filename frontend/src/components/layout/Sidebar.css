@@ -1,0 +1,98 @@
+/* ============================================
+   SIDEBAR BASE
+   Primary Color: #F15E2E
+   ============================================ */
+
+   .sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #eee;
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* ============================================
+     HEADER
+     ============================================ */
+  .sidebar-header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .sidebar-header h4 {
+    font-weight: bold;
+    color: #F15E2E;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* ============================================
+     MENU
+     ============================================ */
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .sidebar-menu li {
+    margin-bottom: 12px;
+  }
+  
+  /* ============================================
+     LINKS
+     ============================================ */
+  .sidebar-link {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #444;
+    transition: all 0.25s ease;
+    font-weight: 500;
+  }
+  
+  /* Hover effect */
+  .sidebar-link:hover {
+    background: rgba(241, 94, 46, 0.15);
+    color: #F15E2E;
+  }
+  
+  /* Active route */
+  .sidebar-link.active {
+    background: #F15E2E;
+    color: #fff !important;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(241, 94, 46, 0.4);
+  }
+  
+  /* ============================================
+     FOOTER (LOGOUT BUTTON)
+     ============================================ */
+  .sidebar-footer {
+    margin-top: auto;
+  }
+  
+  .logout-btn {
+    width: 100%;
+    background: #F15E2E;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .logout-btn:hover {
+    background: #d94f24;
+  }
+  

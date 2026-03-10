@@ -1,0 +1,235 @@
+/* ============================================================
+   EMPLOYEES PAGE — CLEAN & MODERN ADMIN DESIGN
+   ============================================================ */
+
+/* Smooth fade animation */
+.fade-in {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================================
+     CARD WRAPPER
+     ============================================================ */
+.card-custom {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  transition: 0.25s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.10);
+}
+
+/* ============================================================
+     SECTION TITLES
+     ============================================================ */
+.section-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* ============================================================
+     FORM INPUTS
+     ============================================================ */
+.form-control,
+.form-select {
+  border-radius: 8px !important;
+  border: 1px solid #ddd !important;
+  padding: 10px !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #F15E2E !important;
+  box-shadow: 0 0 0 0.15rem rgba(241, 94, 46, 0.25) !important;
+}
+
+/* ============================================================
+     BUTTONS
+     ============================================================ */
+.btn-primary {
+  background-color: #F15E2E !important;
+  border: none !important;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-danger {
+  border-radius: 6px;
+}
+
+/* ============================================================
+     FILTER ROW
+     ============================================================ */
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.filter-label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* ============================================================
+     SEARCH BAR
+     ============================================================ */
+.search-box input {
+  height: 40px;
+  padding-left: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.search-box input:focus {
+  border-color: #F15E2E;
+  box-shadow: 0 0 0 0.15rem rgba(241, 94, 46, 0.25);
+}
+
+/* ============================================================
+     TABLE DESIGN
+     ============================================================ */
+.table-custom {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table-custom thead tr {
+  background: #f5f5f5;
+}
+
+.table-custom th {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.table-custom tbody tr {
+  transition: 0.2s;
+}
+
+.table-custom tbody tr:hover {
+  background: #fff4ef !important;
+  /* soft primary tint */
+  cursor: pointer;
+}
+
+.table-status-active {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.table-status-inactive {
+  color: #d9534f;
+  font-weight: 600;
+}
+
+/* ============================================================
+     PAGINATION
+     ============================================================ */
+.pagination-box {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.employee-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+}
+
+/* ============================================================
+   ACCORDION — CUSTOM ADMIN STYLE
+   ============================================================ */
+
+   .accordion-custom {
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+  }
+  
+  /* Header */
+  .accordion-header-custom {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f5f5f5;
+    transition: all 0.25s ease;
+  }
+  
+  .accordion-header-custom h4 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #0C120C;
+  }
+  
+  /* Icons */
+  .accordion-header-custom span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #F15E2E;
+  }
+  
+  /* Hover */
+  .accordion-header-custom:hover {
+    background: #fff4ef;
+  }
+  
+  /* Open state */
+  .accordion-header-custom.open {
+    background: #F15E2E;
+  }
+  
+  .accordion-header-custom.open h4,
+  .accordion-header-custom.open span {
+    color: white;
+  }
+  
+  /* Notification header tint */
+  .accordion-header-custom.notify.open {
+    background: #6D7275;
+  }
+  
+  /* Add employee header tint */
+  .accordion-header-custom.add.open {
+    background: #0C120C;
+  }
+  
+  /* Body */
+  .accordion-body-custom {
+    padding: 20px;
+    animation: fadeIn 0.25s ease-in-out;
+    border-top: 1px solid #eee;
+  }
+  

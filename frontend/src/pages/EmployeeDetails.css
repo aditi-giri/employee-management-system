@@ -1,0 +1,267 @@
+/* =========================
+   GLOBAL PAGE STYLES
+========================= */
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    max-width: 1100px;
+}
+
+/* =========================
+     CARDS
+  ========================= */
+
+.card {
+    border-radius: 14px;
+    border: none;
+    background: #ffffff;
+}
+
+.card.shadow-sm {
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.card h4,
+.card h5 {
+    font-weight: 700;
+    color: #0c120c;
+    margin-bottom: 16px;
+}
+
+/* =========================
+     BACK BUTTON
+  ========================= */
+
+.btn-secondary {
+    background-color: #ecebf3;
+    border: none;
+    color: #0c120c;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: #c7d6d5;
+}
+
+/* =========================
+     PROFILE HEADER
+  ========================= */
+
+.employee-detail-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f15e2e;
+    background-color: #ecebf3;
+}
+
+.employee-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.employee-header h5 {
+    font-weight: 700;
+    color: #0c120c;
+}
+
+.employee-header small {
+    color: #6d7275;
+    font-weight: 600;
+}
+
+/* =========================
+     INFO GRID
+  ========================= */
+
+.card .row>div {
+    margin-bottom: 8px;
+    font-size: 14.5px;
+    color: #0c120c;
+}
+
+.card strong {
+    color: #6d7275;
+    font-weight: 600;
+}
+
+/* =========================
+     FORMS
+  ========================= */
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    border: 1px solid #c7d6d5;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #f15e2e;
+    box-shadow: 0 0 0 2px rgba(241, 94, 46, 0.2);
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+/* =========================
+     BUTTONS
+  ========================= */
+
+.btn-primary {
+    background-color: #f15e2e;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 8px 18px;
+}
+
+.btn-primary:hover {
+    background-color: #d84f23;
+}
+
+.btn-danger {
+    background-color: #0c120c;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.btn-danger:hover {
+    background-color: #1f2a1f;
+}
+
+/* =========================
+     STATUS BADGES
+  ========================= */
+
+.status-active {
+    color: #2e7d32;
+    font-weight: 700;
+}
+
+.status-inactive {
+    color: #c62828;
+    font-weight: 700;
+}
+
+/* =========================
+     TABLE
+  ========================= */
+
+.table {
+    margin-top: 10px;
+}
+
+.table thead th {
+    background-color: #ecebf3;
+    border-bottom: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0c120c;
+}
+
+.table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f9f9fb;
+}
+
+.table td {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* =========================
+     MESSAGES
+  ========================= */
+
+.text-success {
+    font-weight: 600;
+}
+
+.text-danger {
+    font-weight: 600;
+}
+
+/* =========================
+     EMPTY STATE
+  ========================= */
+
+.text-muted {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+
+.accordion-card {
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 16px 20px;
+    background-color: #ecebf3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.accordion-header:hover {
+    background-color: #c7d6d5;
+}
+
+.accordion-header h5 {
+    margin: 0;
+    font-weight: 700;
+    color: #0c120c;
+}
+
+.accordion-header span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f15e2e;
+}
+
+.accordion-header.admin {
+    background-color: #0c120c;
+}
+
+.accordion-header.admin h5,
+.accordion-header.admin span {
+    color: #ffffff;
+}
+
+.accordion-body {
+    padding: 20px;
+    animation: fadeIn 0.3s ease-in-out;
+}

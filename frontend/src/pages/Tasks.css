@@ -1,0 +1,180 @@
+/* ================================
+   TASKS PAGE — Modern UI
+   ================================ */
+
+   .tasks-container {
+    padding: 20px;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* =======================================
+     SUMMARY CARDS
+     ======================================= */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 25px;
+  }
+  
+  .summary-card {
+    padding: 18px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #ececec;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: 0.25s ease;
+  }
+  
+  .summary-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.10);
+  }
+  
+  .summary-card h6 {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 6px;
+  }
+  
+  .summary-card h3 {
+    font-size: 26px;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  /* Colors */
+  .sum-pending { color: #F15E2E; }
+  .sum-progress { color: #3f6cf3; }
+  .sum-completed { color: #28a745; }
+  .sum-overdue { color: #d9534f; }
+  
+  /* =======================================
+     VIEW TOGGLE BUTTONS
+     ======================================= */
+  
+  .view-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .view-btn {
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    transition: 0.2s ease;
+  }
+  
+  .view-btn:hover {
+    background:#e6e6e6;
+    border-color: #bbb;
+  }
+  
+  .view-btn.active {
+    background: #F15E2E;
+    color: white;
+    border-color: transparent;
+  }
+  
+  /* =======================================
+     SEARCH & FILTER CARDS
+     ======================================= */
+  
+  .filter-card,
+  .search-card,
+  .kanban-column,
+  .group-card,
+  .table-card {
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+  }
+  
+  /* =======================================
+     KANBAN BOARD
+     ======================================= */
+  .kanban-row {
+    display: flex;
+    gap: 18px;
+  }
+  
+  .kanban-column {
+    flex: 1;
+  }
+  
+  .kanban-column h5 {
+    font-weight: 600;
+  }
+  
+  .kanban-task {
+    background: #f8f9fa;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    transition: 0.2s ease;
+  }
+  
+  .kanban-task:hover {
+    background: #eef0f2;
+  }
+  
+  /* Status colors */
+  .status-badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .status-pending {
+    background: #fff4e5;
+    color: #F15E2E;
+  }
+  
+  .status-progress {
+    background: #e8edff;
+    color: #3f6cf3;
+  }
+  
+  .status-completed {
+    background: #e7faec;
+    color: #1c9c41;
+  }
+  
+  .status-overdue {
+    background: #ffe5e5;
+    color: #d9534f;
+  }
+  
+  /* =======================================
+     TABLE
+     ======================================= */
+  
+  .table-custom tbody tr:hover {
+    background: #f5f7f9;
+  }
+  
+  .table-custom td {
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  
+  /* Pagination */
+  .pagination-box {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+  
